@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Web App</title>
+    <link rel="icon" type="image/x-icon" href="./assests//favicon.png" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="nav-container">
+          <p class="nav-para">openWeather.com</p>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="main-container">
+        <div class="searchbar-contianer">
+          <form class="form">
+            <input
+              class="input"
+              type="text"
+              placeholder="Enter City Name/ZIP code"
+            />
+            <select class="select-tag">
+              <option value="metric">Celcius</option>
+              <option value="imperial">Farenhiet</option>
+            </select>
+            <button class="button" type="submit">Check Weather</button>
+          </form>
+        </div>
+        <p class="para"></p>
+        <div class="wrapper">
+          <div class="weather-contianer">
+            <div class="left">
+              <div class="left-inside">
+                <p class="city-name"></p>
+                <p class="country-name"></p>
+                <p class="main-desc"></p>
+                <p class="desc"></p>
+              </div>
+              <div class="right-inside">
+                <p class="temperature"></p>
+              </div>
+            </div>
+            <div class="right">
+              <div class="image">
+                <img class="weather-image" src="" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="weather-info-contianer">
+            <div class="upper">
+              <div class="inner">
+                <p class="inner-para">MinTemp</p>
+                <p id="min-temp" class="inner-para-info"></p>
+              </div>
+              <div class="inner">
+                <p class="inner-para">MaxTemp</p>
+                <p id="max-temp" class="inner-para-info"></p>
+              </div>
+              <div class="inner">
+                <p class="inner-para">Pressure</p>
+                <p id="pressure" class="inner-para-info"></p>
+              </div>
+              <div class="inner">
+                <p class="inner-para">Humidity</p>
+                <p id="humidity" class="inner-para-info"></p>
+              </div>
+            </div>
+            <div class="lower">
+              <div class="inner">
+                <p class="inner-para">Wind Speed</p>
+                <p id="wind-speed" class="inner-para-info"></p>
+              </div>
+              <div class="inner">
+                <p class="inner-para">&#127749;Sunrise</p>
+                <p id="sunrise" class="inner-para-info"></p>
+              </div>
+              <div class="inner">
+                <p class="inner-para">&#127751;Sunset</p>
+                <p id="sunset" class="inner-para-info"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

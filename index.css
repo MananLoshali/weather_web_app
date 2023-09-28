@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./assests/back.jpg);
+}
+
+.nav {
+  width: 100vw;
+  height: 9vh;
+  background-color: darkcyan;
+}
+
+.nav-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 0px;
+}
+
+.nav-para {
+  font-size: 3rem;
+  font-family: monospace;
+  color: rgb(232, 111, 67);
+}
+
+.main {
+  width: 70vw;
+  height: 86vh;
+  border-radius: 1.8rem;
+  display: flex;
+  justify-content: center;
+  padding: 1.8rem;
+  background-color: gray;
+  opacity: 0.7;
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.main-container {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.searchbar-contianer {
+  width: 100%;
+  height: 13%;
+}
+.form {
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.input {
+  border: none;
+  outline: transparent;
+  width: 50%;
+  height: 2.4rem;
+  border-radius: 0.9rem;
+  border: 1px solid fuchsia;
+  background-color: rgb(244, 229, 229);
+  /* color: rgb(37, 88, 129); */
+  color: red;
+  padding: 0.4rem;
+  font-size: large;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button {
+  border: none;
+  width: 20%;
+  height: 2.4rem;
+  border-radius: 0.4rem;
+  background-color: rgb(29, 65, 143);
+  color: white;
+  padding: 0.4rem;
+  font-size: medium;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.button:active {
+  background-color: rgb(8, 47, 98);
+  color: rgb(201, 96, 16);
+}
+
+.wrapper {
+  width: 95%;
+  height: 100%;
+}
+
+.weather-contianer {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem;
+  border-bottom: 1px solid black;
+}
+
+.left {
+  width: 50%;
+  height: 100%;
+  padding: 0.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.right {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-info-contianer {
+  width: 100%;
+  height: 50%;
+  padding: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.main-right-container {
+  width: 30%;
+  height: 100%;
+}
+
+.left-inside {
+  width: 60%;
+  height: 100%;
+}
+
+.main-desc {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+}
+
+.desc {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: white;
+}
+
+.right-inside {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.temperature {
+  font-size: 4rem;
+  font-weight: bolder;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+
+.city-name {
+  font-size: 3rem;
+  font-weight: bold;
+  color: green;
+}
+
+.country-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: green;
+  margin-bottom: 1rem;
+}
+
+.image {
+  width: 80%;
+  height: 80%;
+}
+
+.weather-image {
+  width: 100%;
+  height: 100%;
+}
+
+.upper,
+.lower {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+.inner {
+  width: 24%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-para {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.2rem;
+  font-family: monospace;
+}
+
+.inner-para-info {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: white;
+  font-family: monospace;
+}
+
+.wrapper {
+  display: none;
+}
+
+.para {
+  display: none;
+  font-size: 3rem;
+  color: red;
+  font-family: monospace;
+}
+
+.select-tag {
+  height: 2.4rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .main {
+    background-color: black;
+  }
+  .nav-para {
+    font-size: 2rem;
+    font-family: monospace;
+    color: rgb(232, 111, 67);
+  }
+  .main {
+    width: 90vw;
+    height: 86vh;
+    border-radius: 0.8rem;
+    padding: 0px;
+    padding-top: 0.8rem;
+  }
+
+  .weather-info-contianer {
+    padding: 0.1rem;
+    gap: 0.1rem;
+  }
+
+  .inner {
+    width: 50%;
+  }
+  .inner-para {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.02rem;
+  }
+
+  .inner-para {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+}

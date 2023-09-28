@@ -1,0 +1,15 @@
+This is a weather telling web app made using HTML, CSS and JavaScript. A third-party api is used to fetch the weather information of the specified location.
+
+When you will open the web app you will get a interface where you will see a search bar, a dropdown and a button.
+
+First of all you have to enter the name of the city for which you want to check weather, then you have to specify the unit in which you want to check weather and after that click on check weather button.
+
+If the entered city is correct and is present in api's database then you will be able to see the weather of that particular city in the unit that you have specified earlier(Celcius or Farenheit). You will see the temperature, humidity, pressure, wind speed and sunrise,sunset time.
+
+And in case the city enterd by you is incorrect and is not present in api's database so you will get an error message on the screen indicating "City not found".
+
+And in case the api is not reachable example, if the network is weak etc. then also you will get an error message on screen indicating "Something went wrong".
+
+You will get many errors according to different cases like clicking check weather button without entering nothing etc.
+
+This web app is also responsive as media queries is also used in it to make it responsive.
